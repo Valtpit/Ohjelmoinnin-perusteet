@@ -1,0 +1,35 @@
+/* 
+    Created on : August 10, 2020 
+    Author     : Liisa Auer, Oulu University of Applied Sciences
+*/
+main {
+    font-size: 100%;  /* 16px */
+    font-family: tahoma;
+    margin-left: 2em;
+}
+
+section {
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    width: 15em;
+    vertical-align: top;  
+    border-top: 1px dashed blue;
+    display: inline-block;
+}
+
+div {
+    margin-top: 0.5em;
+}
+
+input {
+    font-family: tahoma;
+}
+
+.piilossa {
+    display: none;
+}
+
+.virhe {
+    color: red;
+}

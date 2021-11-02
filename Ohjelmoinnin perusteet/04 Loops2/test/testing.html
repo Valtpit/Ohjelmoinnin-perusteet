@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops and totals exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/tyylit.css" />	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">        
+        <meta content="Liisa Auer" name="author">
+        <!-- licenced: CC-BY-4.0; https://creativecommons.org/licenses/by/4.0/ --> 
+        <meta name="description" content="Unit testing for programming exercises"> 
+    </head>
+    <body>
+        <div id="page" style="display: none;">
+            <h1>Loops and totals</h1>
+            <div>
+                <section>
+                    <h2>LT1: Hedgerow 1</h2>
+                    <p>Number of hedgerows is not known.</p>
+                    <label for="plants1" class="long">Plants:</label>
+                    <input type="number" id="plants1" step="1"/><br>
+
+                    <label for="distance1" class="long">Distance (cm):</label>
+                    <input type="number" id="distance1" step="1"/>
+
+                    <button onclick="lt01()">Hedgerow 1</button>
+                    <p>Length of hedgerow is <span id="length_cm1"></span> cm<br>
+                        Length of hedgerow is <span id="length_m1"></span> m</p>
+
+                    <p>Total length of hedgerows is <span id="length_cm1_total"></span> cm<br>
+                        Total length of hedgerows is <span id="length_m1_total"></span> m<br>
+                        Total number of plants is <span id="plants1_total"></span> pcs
+                    </p>                    
+                </section>
+
+                <section>
+                    <h2>LT1: Hedgerow 2</h2>
+                    <p>Four different hedgerows will be planted.</p>                  
+
+                    <label for="plants2" class="long">Plants:</label>
+                    <input type="number" id="plants2" step="1"/><br>
+
+                    <label for="distance2" class="long">Distance (cm):</label>
+                    <input type="number" id="distance2" step="1"/>
+
+                    <button onclick="lt02()">Hedgerow 2</button>
+                    <p>Length of hedgerow is <span id="length_cm2"></span> cm<br>
+                        Length of hedgerow is <span id="length_m2"></span> m</p>
+
+                    <p>Total length of hedgerows is <span id="length_cm2_total"></span> cm<br>
+                        Total length of hedgerows is <span id="length_m2_total"></span> m<br>
+                        Total number of plants is <span id="plants2_total"></span> pcs
+                    </p> 
+                    <p id="finish"></p>
+                </section>
+
+                <section>
+                    <h2>LT1: Hedgerow 3</h2>
+                    <p>Four similar hedgerows will be planted.</p>                  
+
+                    <label for="plants3" class="long">Plants:</label>
+                    <input type="number" id="plants3" step="1"/><br>
+
+                    <label for="distance3" class="long">Distance (cm):</label>
+                    <input type="number" id="distance3" step="1"/>
+
+                    <button onclick="lt03()">Hedgerow 3</button>
+                    <p>Length of each hedgerow is <span id="length_cm3"></span> cm<br>
+                        Length of each hedgerow is <span id="length_m3"></span> m</p>
+
+                    <p>Total length of hedgerows is <span id="length_cm3_total"></span> cm<br>
+                        Total length of hedgerows is <span id="length_m3_total"></span> m<br>
+                        Total number of plants is <span id="plants3_total"></span> pcs
+                    </p> 
+                </section>                   
+            </div>
+        </div>
+        <div>
+            <p id="nimix"></p>
+        </div> 
+
+        <script src="../public_html/js/looping.js"></script>        	
+
+        <script src="lib/jquery-3.4.1.min.js"></script>
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/looping_tests.js"></script>        
+
+    </body>
+</html>
+

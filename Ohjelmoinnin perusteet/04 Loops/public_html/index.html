@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loop exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" >
+        <meta content="Liisa Auer" name="author">
+        <meta name="description" content="Programming exercises">        
+    </head>
+    <body>
+        <main id="page">
+            <h1>Loop exercises</h1>
+
+            <div>
+                <section>
+                    <h2>L1: Your name</h2> 
+                    <div>
+                        <label for="name1" class="extra_long">First name:</label>
+                        <input id="name1" class="extra_long" >
+                    </div>
+                    <div>
+                        <label for="name2" class="extra_long">Last name: </label>
+                        <input id="name2" class="extra_long" >
+                    </div>
+                    <button type="button" onclick="l01()">Names</button>
+                    <p id="first_name"></p>
+                    <p id="last_name"></p>
+                </section>
+
+                <section>
+                    <h2>L2: Numbers</h2>
+                    <button type="button" onclick="l02()">Numbers</button> 
+                    <p id="five"></p>
+                    <p id="six"></p>                
+                </section>
+
+                <section>
+                    <h2>L3: Stars</h2>
+                    <label for="amount">Amount: </label><input type="number" id="amount" >
+                    <button type="button" onclick="l03()">Stars</button>
+                    <p id="stars1"></p> 
+                    <p id="stars2"></p> 
+                </section>                        
+
+                <section>
+                    <h2>L4: Numbers</h2>               
+                    <button type="button" onclick="l04()">Numbers</button>
+                    <p id="numbers1"></p>
+                    <p id="numbers2"></p>
+                    <p id="numbers3"></p>
+                </section> 
+
+                <section>
+                    <h2>L5: Divisibility</h2>
+                    <div>
+                        <label for="min">Min:</label>
+                        <input type="number" id="min" >
+                    </div>
+                    <div>
+                        <label for="max">Max:</label>
+                        <input type="number" id="max" >
+                    </div>
+                    <button type="button" onclick="l05()">Divisibility</button>    
+                    <p id="divisibility3"></p>
+                    <p id="divisibility5"></p>
+                </section>
+            </div>
+
+            <h1>Random numbers</h1>
+            <div>
+                <section>
+                    <h2>L6: Heads or tails</h2>                    
+                    <button type="button" onclick="l06()">Distribution</button>
+                    <p>Zeros: <span id="zeros"></span><br> 
+                        Ones: <span id="ones"></span></p> 
+                </section>                        
+
+                <section>
+                    <h2>L7: Joker number</h2>               
+                    <button type="button" onclick="l07()">Joker number</button>
+                    <p>Week: <span id="week"></span><br>
+                        Number: <span id="joker"></span></p>
+                </section>                 
+            </div>
+
+            <h1>Multiplication</h1>
+
+            <div>
+                <section>
+                    <h2>L8: Multiply</h2> 
+                    <div>
+                        <label for="multiplier">Multiplier:</label>
+                        <input type="number" id="multiplier" >
+                    </div>
+                    <button type="button" onclick="l08()">Multiply</button>
+                    <p id="table"></p>                
+                </section>
+                <br>
+                <section class="levea">
+                    <h2>L9: Multiply all</h2>
+                    <button type="button" onclick="l09()">Multiply all</button>
+                    <p id="multiplication"></p>                
+                </section>
+            </div>
+
+            <div>
+                <p>Liisa Auer, Oulu University of Applied Sciences, 
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a></p>
+            </div>            
+        </main>
+        <script src="js/loops.js"></script>
+    </body>
+</html>

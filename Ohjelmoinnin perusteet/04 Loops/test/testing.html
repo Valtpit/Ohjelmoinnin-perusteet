@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loop exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/tyylit.css" />	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">        
+        <meta content="Liisa Auer" name="author">
+        <!-- licenced: CC-BY-4.0; https://creativecommons.org/licenses/by/4.0/ --> 
+        <meta name="description" content="Unit testing for programming exercises"> 
+    </head>
+    <body>
+        <div id="page" style="display: none;">
+            <h1>Loop exercises</h1>
+
+            <div>
+                <section>
+                    <h2>L1: Your name</h2> 
+                    <label for="name1" class="extra_long">First name:</label>
+                    <input id="name1" class="extra_long" >
+                    <label for="name2" class="extra_long">Last name: </label>
+                        <input id="name2" class="extra_long" >
+                    <button onclick="l01()">Names</button>
+                    <p id="first_name"></p>
+                    <p id="last_name"></p>
+                </section>
+
+                <section>
+                    <h2>L2: Numbers</h2>
+                    <button onclick="l02()">Numbers</button> 
+                    <p id="five"></p>
+                    <p id="six"></p>                
+                </section>
+
+                <section>
+                    <h2>L3: Stars</h2>
+                    <label for="amount">Amount: </label><input type="number" id="amount" />
+                    <button onclick="l03()">Stars</button>
+                    <p id="stars1"></p> 
+                    <p id="stars2"></p> 
+                </section>                        
+
+                <section>
+                    <h2>L4: Numbers</h2>               
+                    <button onclick="l04()">Numbers</button>
+                    <p id="numbers1"></p>
+                    <p id="numbers2"></p>
+                    <p id="numbers3"></p>
+                </section> 
+
+                <section>
+                    <h2>L5: Divisibility</h2>
+                    <label for="min">Min:</label><input type="number" id="min" />
+                    <label for="max">Max:</label><input type="number" id="max" />
+                    <button onclick="l05()">Divisibility</button>    
+                    <p id="divisibility3"></p>
+                    <p id="divisibility5"></p>
+                </section>
+            </div>
+
+            <h1>Random numbers</h1>
+            <div>
+                <section>
+                    <h2>L6: Heads or tails</h2>                    
+                    <button onclick="l06()">Distribution</button>
+                    <p>Zeros: <span id="zeros"></span><br> 
+                    Ones: <span id="ones"></span></p> 
+                </section>                        
+
+                <section>
+                    <h2>L7: Joker number</h2>               
+                    <button onclick="l07()">Joker number</button>
+                    <p>Week: <span id="week"></span><br>
+                    Number: <span id="joker"></span></p>
+                </section>                 
+            </div>            
+            
+            <h1>Multiplication</h1>
+
+            <div>
+                <section>
+                    <h2>L6: Multiply</h2> 
+                    <label for="multiplier">Multiplier:</label><input type="number" id="multiplier" />
+                    <button onclick="l06()">Multiply</button>
+                    <p id="table"></p>                
+                </section>
+                <br>
+                <section class="levea">
+                    <h2>L7: Multiply all</h2>
+                    <button onclick="l07()">Multiply all</button>
+                    <p id="multiplication"></p>                
+                </section>
+            </div>
+        </div>
+        <div>
+                <p id="nimix"></p>
+        </div> 
+        
+        <script src="../public_html/js/loops.js"></script>
+        
+        <script src="lib/jquery-3.4.1.min.js"></script>
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+        
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/loops_tests.js"></script>        
+
+    </body>
+</html>
+

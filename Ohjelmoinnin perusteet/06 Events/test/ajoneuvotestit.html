@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+        <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">        
+
+    </head>
+    <body>
+        <main style="display: none;">
+            <section>
+                <h2>Ajoneuvon toimintasäde</h2>
+                <form id="ajoneuvo" onsubmit="laskeriittävyys(); return false;">
+                <form>
+                    <div>
+                        <input type="checkbox" id="tankki" onclick="tankille()">
+                        <label for="tankki"> Tankille viimeistään</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="toimsäde" onclick="toimintasäde()" >                    
+                        <label for="toimsäde"> Toimintasäde</label>
+                    </div>
+    
+                    <div>
+                        <label for="polttoaine">Jäljellä oleva polttoaineen määrä</label>
+                        <input type="text" id="polttoaine" onfocus="tyhjennä();" >
+                    </div>
+    
+                    <div>
+                        <label for="kulutus">Kulutus 100 km:llä</label>
+                        <input type="text" id="kulutus" onfocus="tyhjennä()">
+                    </div>
+                    <div>
+                        <input type="submit" value="Laske">
+                        <input type="reset" value="Tyhjennä">
+                    </div>
+                </form> 
+                <div>
+                    <p id="ttankille" class="piilossa">Tankille viimeistään <span id="tankilletulos"></span> km:n päästä</p>                
+                    <p id="tsäde" class="piilossa">Toimintasäde <span id="sädetulos"></span> km</p>
+                    <p id="autovirhe" class="virhe"></p>
+                </div>
+            </section>
+    
+            <section>
+                <h2>Sauvan pituus 1</h2>
+                <form id="sauvat1" onsubmit="yksivalittu(); return false;">
+                    <div>
+                        <input type="radio" name="valinta1" id="perinteinen1" onclick="valintanapit(0)" checked>
+                        <label for="perinteinen1"> Perinteinen</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="valinta1" id="vapaa1" onclick="valintanapit(1)" >
+                        <label for="vapaa1"> Vapaa</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="valinta1" id="kävely1" onclick="valintanapit(2)" >
+                        <label for="kävely1"> Sauvakävely</label>
+                    </div>
+                    <div>
+                        <label for="">Pituus cm</label>
+                        <input type="text" id="pituus1" onfocus="tyhjennä1();">
+                    </div>   
+    
+                    <div>
+                        <input type="submit" value="Laske">
+                        <input type="reset" value="Tyhjennä">
+                    </div>
+                </form>
+                <div>
+                    <p id="sauvatulos1"></p>
+                    <p id="sauvavirhe1" class="virhe"></p>
+                </div>
+            </section>
+            <section>
+                <h2>Sauvan pituus 2</h2>
+                <form id="sauvat2" onsubmit="montavalittu(); return false;">
+                    <div>
+                        <input type="checkbox" name="valinta2" id="perinteinen2" checked onclick="tyhjennä2()">
+                        <label for="perinteinen2"> Perinteinen</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="valinta2" id="vapaa2" onclick="tyhjennä2()">
+                        <label for="vapaa2"> Vapaa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="valinta2" id="kävely2" onclick="tyhjennä2()">
+                        <label for="kävely2"> Sauvakävely</label>
+                    </div>
+                    <div>
+                        <label for="">Pituus cm</label>
+    
+                        <input type="text" id="pituus2" onfocus="tyhjennä2()">
+                    </div>                
+                    <div>
+                        <input type="submit" value="Laske">
+                        <input type="reset" value="Tyhjennä">
+                    </div>
+                </form>
+                <div>
+                    <p id="sauvatulos2"></p>
+                    <p id="sauvavirhe2" class="virhe"></p>
+                </div>
+            </section>    
+        </main>
+        <div>
+                <p id="nimix"></p>
+        </div> 
+        
+        <script src="../public_html/js/events.js"></script>        	
+        <script src="lib/jquery-3.4.1.min.js" type="text/javascript"></script>
+        
+        <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+
+        <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-3.3.0/boot.js"></script>        
+        
+        <!-- varsinaiset testit ovat tässä tiedostossa... -->
+        <script src="spec/ajoneuvo_tests.js"></script>        
+
+    </body>
+</html>
+

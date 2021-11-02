@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Phone book</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/Pitkanen.css" rel="stylesheet">
+    <meta name="author" content="Valtteri Pitkänen" />
+  </head>
+
+  <body onload="startData()">
+    <main>
+      <h1>Phone book</h1>
+
+      <section>
+        <h2>Insert / Update</h2>
+        <input type="hidden" id="index">
+        <div class="form">
+    
+          <label for="last">Last name:</label>
+          <input type="text" id="last">
+
+        <div class="form">
+          <label for="first">First name:</label>
+          <input type="text" id="first" />
+        </div>
+
+        <div class="form">
+          <label for="phone">Phone number:</label>
+          <input type="text" id="phone" />
+        </div>
+
+        <div class="form">
+          <label for="birth">Birth year:</label>
+          <input type="number" id="birth" />
+        </div>
+
+        <button onclick="save()">Save</button>
+        <!--<button onclick="startData()">Start data</button>-->
+        <button onclick="cancel()">Cancel</button>
+
+
+      </section>
+
+      <section>
+          <h2>All friends</h2>
+          <p id="allFriends"></p>
+          <p id="age"></p>
+      </section>
+
+      <section>
+          <h2>One friend</h2>
+          <p id="oneFriend" class="one">&nbsp;</p>
+      </section>
+    </main>
+    <script src="js/Pitkanen.js"></script>
+  </body>
+</html>
